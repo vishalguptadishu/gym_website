@@ -1,20 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import Singin from './Component/SingIn/Singin';
+// import LogIn from './Component/LogIn/LogIn';
+import Slider from './Component/Sider/Slider';
+import Navbar from './Component/Navbar/Navbar';
+import About from './Component/About/About';
+import Cart from './Component/Cart/Cart';
+import Trainer from './Component/Trainer/Trainer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>benifits of useing react...</h1>
-        <ul>1.Component-based architecture</ul>
-        <ul>2.Virtual DOM for efficient updates</ul>
-        <ul>3.Rich ecosystem and community</ul>
-        <ul>4.Strong community support</ul>
-        <button>Get Started</button>
-      
-
-      </header>
+    <Navbar />
+    {/* <LogIn /> */}
+    {/* <Singin /> */}
+    <Slider/>
+    <About />
+    {/* <Cart /> */}
+    <Trainer />
     </div>
   );
 }

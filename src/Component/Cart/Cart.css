@@ -1,0 +1,12 @@
+.Cart{
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    margin-top: 400px;
+    /* position: relative; */
+}
+
+.Cart img{
+    height: 200px;
+    width: 170px;
+}
