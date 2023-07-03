@@ -1,12 +1,12 @@
 import LogIn from "../LogIn/LogIn"
-import './Navbar.css'
+import styles from './Navba.module.css'
 const Navbar=()=>{
     return (
-        <div className="Navbar" >
-          <div className="logo">
-           <img src="https://w7.pngwing.com/pngs/779/1005/png-transparent-gym-logo.png" alt="" />
+        <div className={styles.Navbar} >
+          <div className={styles.logo}>
+           <img src="https://img.freepik.com/premium-vector/fitness-center-logo_25327-170.jpg" alt="" />
           </div>
-          <div className="link">
+          <div className={styles.link}>
             <ul>
                 <li>Home</li>
                 <li>About</li>
@@ -15,7 +15,7 @@ const Navbar=()=>{
                 <li>Pricing</li>
             </ul>
           </div>
-          <div className="login">
+          <div className={styles.login}>
                 <button>Join</button>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Singin.css"
+import styles from "./Singin.module.css"
 const Singin =()=>{
 
     let [email, setemail]=useState("")
@@ -14,9 +14,9 @@ const Singin =()=>{
        localStorage.setItem("user", JSON.stringify(user_obj))
     }
     return (
-        <div className="Singin">
-          <h1>plse log in</h1>
-          <div className="inp">
+        <div className={styles.Singin}>
+          <h1>Sing in</h1>
+          <div className={styles.inp}>
             <label htmlFor="">Name</label>
             <br />
             <input type="text" placeholder="Name" />
@@ -37,9 +37,9 @@ const Singin =()=>{
             <br />
             <input type="number" placeholder="number" />
             <br />
-            <button onClick={SinginFun} >sing In</button>
+            <button className={styles.singinbtn} onClick={SinginFun} >sing In</button>
           </div>
-          <div className="newUsers" >
+          <div className={styles.newUsers} >
              <p>Allready have acount </p>
           </div>
         </div>

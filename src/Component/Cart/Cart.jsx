@@ -1,11 +1,16 @@
-import './Cart.css'
-const Cart=()=>{
-    return(
-        <div className="Cart">
-         <img src="https://images.pexels.com/photos/5327458/pexels-photo-5327458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
-         <h4> vishl gupta</h4>
-         <p>hdsi siojh</p>
-        </div>
-    )
-}
+import styles from'./Cart.module.css'
+
+const Cart = ({ cartobj }) => {
+    return (
+      <div className={styles.Cart}>
+        {cartobj.map((elem) => (
+          <div className={styles.par1cart} key={elem.id}>
+            <img src={elem.url} alt="" />
+            <h4>{elem.name}</h4>
+            <p>hdsi siojh</p>
+          </div>
+        ))}
+      </div>
+    );
+  };
 export default Cart;

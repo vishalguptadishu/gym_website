@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./LogIn.module.css";
 const LogIn =()=>{
   let [email, setemail]=useState("")
   let [Password, setPassword]=useState("")
@@ -17,9 +18,9 @@ const LogIn =()=>{
   }
 
     return (
-        <div className="Login">
-          <h1>plse log in</h1>
-          <div className="inp">
+        <div className={styles.Login}>
+          <h1>Log In</h1>
+          <div className={styles.inp}>
             <label htmlFor="">Email</label>
             <br />
             <input type="text" placeholder="Email" onChange={(e)=>{setemail(e.target.value)}} />
@@ -28,9 +29,9 @@ const LogIn =()=>{
             <br />
             <input type="text" placeholder="Password"  onChange={(e)=>{setPassword(e.target.value)}} />
             <br />
-            <button onClick={handalLogIn} >Log In</button>
+            <button className={styles.loginbtn} onClick={handalLogIn} >Log In</button>
           </div>
-          <div className="newUsers" >
+          <div className={styles.newUsers} >
              <p>If You are new </p>
           </div>
         </div>

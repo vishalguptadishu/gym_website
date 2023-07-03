@@ -1,4 +1,4 @@
-import "./Slider.css"
+import styles from "./Slider.module.css"
 import { useState } from "react"
 let poster=[
   {id:1,url:"https://images.pexels.com/photos/5327483/pexels-photo-5327483.jpeg?auto=compress&cs=tinysrgb&w=1360&h=750&dpr=1"},
@@ -11,18 +11,18 @@ const Slider =()=>{
 
 
   return (
-    <div className="Slider">
-        <div className="poster">
+    <div className={styles.Slider}>
+        <div className={styles.poster}>
          <img src={poster[index_url].url} alt="poster" />
         </div>
-        <div className="poster_hading">
+        <div className={styles.poster_hading}>
             <h1>" Take care of your body. <br /> it's the only place you have <br /> to live "</h1>
             <button>Click</button>  
         </div>
-        <div className="dot">
+        <div className={styles.dot}>
           {
            poster.map((elem,ind)=>(
-            <h3 key={ind} onClick={()=>{setindex_url(ind)}} className={(ind===index_url) ? "active" : "uj"} >&bull;</h3>
+            <h3 key={ind} onClick={()=>{setindex_url(ind)}} className={(ind===index_url) ? "active" : ""} >&bull;</h3>
            )) 
           }
           

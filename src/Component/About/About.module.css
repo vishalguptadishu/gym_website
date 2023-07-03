@@ -22,6 +22,10 @@
     margin-top: 50px;
     padding-right: 50px;
 }
+.aboutSection1 p{
+    color: black;
+    margin-left: 0px;
+}
 iframe{
     padding-left: 50px;
     padding-top: 50px;
@@ -29,7 +33,7 @@ iframe{
 .div2{
     width: 100vw;
     height: 70vh;
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     align-items: center;
 }
@@ -48,4 +52,8 @@ iframe{
     margin-top: 50px;
     padding-left: 50px;
     padding-right: 40px;
+}
+.aboutSection2 p{
+    color: black;
+    margin-left: 0px;
 }
