@@ -7,7 +7,7 @@ const Cart = ({ cartobj }) => {
           <div className={styles.par1cart} key={elem.id}>
             <img src={elem.url} alt="" />
             <h4>{elem.name}</h4>
-            <p>hdsi siojh</p>
+            <p>Gym Trainer</p>
           </div>
         ))}
       </div>

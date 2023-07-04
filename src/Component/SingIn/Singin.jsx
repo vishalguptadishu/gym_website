@@ -48,7 +48,7 @@ const Singin =()=>{
             <button className={styles.singinbtn} onClick={SinginFun} >Sing In</button>
           </div>
           <div className={styles.newUsers} >
-             <p>Allready have acount <Link to={"/logIn"} >Click hear</Link> </p>
+             <p>Allready have acount <Link to={"/logIn"} >Click here</Link> </p>
           </div>
         </div>
     )

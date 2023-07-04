@@ -43,7 +43,7 @@ const LogIn =()=>{
             <button className={styles.loginbtn} onClick={handalLogIn} >Log In</button>
           </div>
           <div className={styles.newUsers} >
-             <p>If You are new <Link to={"/Singin"} > Click hear</Link> </p>
+             <p className="n" >If You are new <Link to={"/Singin"} > Click here</Link> </p>
           </div>
         </div>
     )

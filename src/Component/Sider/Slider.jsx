@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import styles from "./Slider.module.css"
 import { useState } from "react"
 let poster=[
@@ -8,7 +9,8 @@ let poster=[
 
 const Slider =()=>{
   let [index_url, setindex_url]=useState(0)
-
+ 
+ 
 
   return (
     <div className={styles.Slider}>

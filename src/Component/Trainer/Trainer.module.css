@@ -1,6 +1,7 @@
 .Trainer{
     background-color: #383737;
-    height: 95vh;
+    height: 100vh;
+    margin-top: -19px;
 }
 .hader{
     text-align: center;
