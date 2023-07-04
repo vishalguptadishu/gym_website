@@ -21,12 +21,12 @@ const Trainer=()=>{
     const cartRef = useRef(null);
     function leftbtnfun(){
         if (cartRef.current) {
-            cartRef.current.scrollLeft -= 150
+            cartRef.current.scrollLeft -= 200
           }
     }
     function rightbtnfun(){
         if (cartRef.current) {
-            cartRef.current.scrollLeft +=150
+            cartRef.current.scrollLeft +=200
           }
     }
     return (

@@ -13,3 +13,8 @@
         border-radius: 0px;
        
 }
+.newUsers p{
+    color: black;
+    margin-left: -80px;
+    font-size: 14px;
+}

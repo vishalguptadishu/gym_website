@@ -1,5 +1,6 @@
-import LogIn from "../LogIn/LogIn"
+
 import styles from './Navba.module.css'
+import {Link} from "react-router-dom"
 const Navbar=()=>{
     return (
         <div className={styles.Navbar} >
@@ -16,7 +17,7 @@ const Navbar=()=>{
             </ul>
           </div>
           <div className={styles.login}>
-                <button>Join</button>
+            <Link to={"/logIn"}><button>Join</button></Link>
           </div>
         </div>
     )

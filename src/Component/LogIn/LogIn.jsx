@@ -1,20 +1,31 @@
 import { useState } from "react";
 import styles from "./LogIn.module.css";
+import {Link} from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
 const LogIn =()=>{
+
   let [email, setemail]=useState("")
   let [Password, setPassword]=useState("")
-  console.log(email)
 
+  const navigate = useNavigate();
+
+
+  
   function handalLogIn(){
+    if(email=="" || Password=="" ){
+      alert("pls fill the form")
+    
+    }else {
+
+   
     let user_obj = JSON.parse(localStorage.getItem("user"));
     if ((user_obj.email == email) & (user_obj.Password === Password)) {
       alert("You are Log in successfully");
-      // localStorage.setItem("auth", true);
-
-      // Navigate("/");
+      navigate('/');
     } else {
-      alert(" thes is wrong");
+      alert(" this is wrong");
     }
+  }
   }
 
     return (
@@ -32,7 +43,7 @@ const LogIn =()=>{
             <button className={styles.loginbtn} onClick={handalLogIn} >Log In</button>
           </div>
           <div className={styles.newUsers} >
-             <p>If You are new </p>
+             <p>If You are new <Link to={"/Singin"} > Click hear</Link> </p>
           </div>
         </div>
     )
